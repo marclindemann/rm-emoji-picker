@@ -44,7 +44,7 @@ export default {
     prevent_new_line : false,
 
     //The text that will be displayed when no emoji is being hovered over.
-    default_footer_message: "Please select an emoji from the list above",
+    default_footer_message: "Bitte wählen Sie ein Smiley aus",
 
     //Can be "autoplace", "vertical", "horizontal", or a function that takes a tooltip as an argument.
     //The tooltip is an instance of the class in this repo here: https://github.com/RobertMenke/Tooltip-js
