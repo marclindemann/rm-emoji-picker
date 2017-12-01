@@ -16,7 +16,8 @@
   "repository": "https://github.com/RobertMenke/rm-emoji-picker",
   "bugs": "https://github.com/RobertMenke/rm-emoji-picker/issues",
   "dependencies": {
-    "emoji-js": "^3.4.0",
+    "emoji-js": "3.2.0",
+    "file-loader": "^0.11.2",
     "jquery": "^3.2.1",
     "rm-tooltip": "^1.0.5"
   },
@@ -36,8 +37,8 @@
     "webpack": "^1.15.0"
   },
   "scripts": {
-    "start": "webpack --progress --watch",
-    "start-example": "webpack --config example.webpack.config.js --progress --watch",
+    "start": "webpack --progress",
+    "start-example": "webpack --config example.webpack.config.js --progress",
     "build-example": "npm install --save jquery && npm run start-example",
     "build-lib": "npm uninstall --save jquery && npm start",
     "styles": "scss --watch src/scss/emojipicker.scss:dist/emojipicker.css",
