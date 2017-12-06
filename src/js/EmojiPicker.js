@@ -568,7 +568,7 @@ export default class EmojiPicker {
      */
     _getActiveCategory() {
 
-        const scroll_top = this.$content.get(0).scrollTop;
+        const scroll_top = Math.round(this.$content.get(0).scrollTop);
         let cat          = this.categories[0];
 
         for(let i = 0; i < this.categories.length; i++){
